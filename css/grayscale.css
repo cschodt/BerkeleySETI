@@ -475,3 +475,24 @@ width: 65px;
 .quote{
 font-style: italic;
 }
+
+.intro-people {
+    display: table;
+    width: 100%;
+    height: 60vh;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background: url(../img/people_bg.jpg) no-repeat bottom center scroll;
+    background-color: #000;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.video_profile {
+    width: 640px;
+    margin-left: auto;
+    margin-right: auto;
+}
