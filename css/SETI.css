@@ -94,7 +94,7 @@ a:focus {
 
 .navbar-custom .navbar-brand .navbar-toggle {
     padding: 4px 6px;
-    font-size: 16px;
+    font-size: 40px;
     color: #fff;
 }
 
@@ -107,16 +107,22 @@ a:focus {
     color: #fff;
 }
 
+
+
 .navbar-custom .nav li a {
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
+    margin-left: -10px;
 }
 
 .navbar-custom .nav li a:hover {
     outline: 0;
     color: #28ace2;
     background-color: transparent;
+}
+.navbar-nav li {
+    font-size: 15px;
 }
 
 .navbar-custom .nav li a:focus,
@@ -140,9 +146,9 @@ a:focus {
 
 @media(min-width:768px) {
     .navbar-custom {
-        padding: 60px 0;
+        padding: 40px 0;
         border-bottom: 0;
-        letter-spacing: 1px;
+        letter-spacing: -.4px;
         background: 0 0;
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
@@ -160,16 +166,43 @@ a:focus {
     margin-top: -19px;
    
 }
-
     
+}
 
+    .bsrclg {
+        display: inline-block
+    }
+    
+    .bsrcsm {
+        display: none;
+    }
+    
+    @media(max-width:1100px) {
+        .bsrclg {
+            display: none;
+            
+        }
+        .bsrcsm {
+            display: inline-block
+        }
+        
+        .navbar-header{
+            width:138px;
+        }
+        
+    }
+
+@media(max-width:768px){
+        .bsrcsm {
+        display: none;
+    } 
 }
 
 .intro {
     display: table;
     width: 100%;
-    height: 60vh;
-    padding: 100px 0;
+    height: 20vh;
+    padding: 20px 0;
     text-align: center;
     color: #fff;
     background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
@@ -186,22 +219,25 @@ a:focus {
 }
 
 .intro .intro-body .brand-heading {
-    font-size: 60px;
+    font-size: 12vw;
+    padding-top: 80px;
 }
 
 .intro .intro-body .intro-text {
-    font-size: 18px;
+    font-size: 24px;
 }
 
 @media(min-width:768px) {
     .intro {
-        height: 60vh;
+        height: 30vh;
         width: 100%;
         padding: 0;
     }
 
     .intro .intro-body .brand-heading {
-        font-size: 100px;
+        font-size: 8vw;
+        padding-top: 70px;
+        
     }
 
     .intro .intro-body .intro-text {
@@ -210,6 +246,35 @@ a:focus {
     
 
 }
+
+@media(min-width:1200px) {
+    .intro {
+        height: 15vh;
+        width: 100%;
+        padding: 0;
+    }
+
+    .intro .intro-body .brand-heading {
+        font-size: 5vw;
+       
+    }
+
+    .intro .intro-body .intro-text {
+        font-size: 26px;
+    }
+    
+
+}
+
+
+
+
+
+
+
+
+
+
 
 .btn-circle {
     width: 70px;
@@ -286,14 +351,14 @@ a:focus {
 }
 
 .content-section {
-    padding-top: 50px;
+    padding-top: 20px;
 }
 
 .download-section {
     width: 100%;
-    padding: 50px 0;
+    padding: 30px 0;
     color: #fff;
-    background: url(../img/seti@home.png) no-repeat center center scroll;
+    background: url(../img/seti@homedark.png) no-repeat center center scroll;
     background-color: #000;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -309,11 +374,11 @@ a:focus {
 
 @media(min-width:767px) {
     .content-section {
-        padding-top: 50;
+        padding-top: 20;
     }
 
     .download-section {
-        padding: 100px 0;
+        padding: 10px 0;
     }
 
     #map {
@@ -495,4 +560,15 @@ font-style: italic;
     width: 640px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.news {
+    font-size: 50px; 
+}
+
+
+a[name] {
+  padding-top: 100px;
+  margin-top: -100px;
+  display: inline-block; /* required for webkit browsers */
 }
