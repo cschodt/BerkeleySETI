@@ -21,9 +21,9 @@
 
 	<!-- Custom Fonts -->
 	<link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
- 
-	<link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900|Work+Sans:200,300,400,500,700,900" rel='stylesheet' type='text/css'>
+
+
+	<link href="https://fonts.googleapis.com/css?family=Lato:400,300,700,900|Montserrat:400,700|Work+Sans:200,300,400,500,700,900|Bitter:400,400italic,700" rel="stylesheet" type="text/css">
 
 
 	<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -70,7 +70,7 @@
 					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#About">SETI@home<span class="caret"></span></a>
 
 					<ul class="dropdown-menu">
-						<li><a href="http://setiathome.ssl.berkeley.edu/">About SETI@home</a></li>
+						<li><a href="http://setiathome.berkeley.edu/sah_about.php">About SETI@home</a></li>
 						<li><a href="http://boinc.berkeley.edu/download.php">Download BOINC</a></li>
 						<li><a href="https://setiathome.berkeley.edu/forum_index.php">Message boards</a></li>
 						<li role="separator" class="divider"></li>
@@ -88,7 +88,7 @@
 
 					<ul class="dropdown-menu">
 						<li><a href="http://www.breakthroughinitiatives.org/Initiative/1">Overview</a></li>
-						<li><a href="http://www.breakthroughinitiatives.org/Telescopes/1">Telescopes</a></li>
+						<!-- <li><a href="http://www.breakthroughinitiatives.org/Telescopes/1">Telescopes</a></li> -->
 						<li><a href="/listen/listen.html">Science</a></li>
 
 
@@ -102,10 +102,10 @@
 				<li class="dropdown">
 					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#About">Other Projects<span class="caret"></span></a>
 					<ul class="dropdown-menu">
-						<li><a href="https://seti.berkeley.edu/publications">Publications and References</a></li>
-						<li><a href="/telescopes">Telescopes</a></li>
-						<li role="separator" class="divider"></li>
-						<li><a href="https://seti.berkeley.edu/serendip">SERENDIP</a></li>
+
+
+
+						<li><a href="SERENDIP.html">SERENDIP</a></li>
 						<li><a href="http://setiathome.berkeley.edu/ap_info.php">AstroPulse</a></li>
 						<!--
 							<li role="separator" class="divider"></li>
@@ -125,6 +125,8 @@
 
 						<li><a href="http://twitter.com/setiathome">Twitter</a></li>
 						<li><a href="https://www.facebook.com/BerkeleySETI">Facebook</a></li>
+						<li><a href="http://youtube.com/berkeleyseti">YouTube</a></li>
+						<li><a href=" https://www.instagram.com/setiathome/">Instagram</a></li>
 
 
 					</ul>
@@ -135,20 +137,21 @@
 
 
 
-				<li>
-					<a class="page-scroll" href="http://setiathome.berkeley.edu/sah_donate.php">Donate</a>
-				</li>
+
 
 
 				<li class="dropdown">
 					<a class="page-scroll dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" href="#About">About<span class="caret"></span></a>
 
 					<ul class="dropdown-menu">
-						<li><a href="/collaborators_sponors.html">Collaborators and Sponsors</a></li>
-						<li><a href="/FAQ.html">FAQ</a></li>
-						<li> <a class="page-scroll" href="/people.html">People</a> </li>
+						<li><a href="collaborators_sponsors.html">Collaborators and Sponsors</a></li>
+						<li><a href="FAQ.html">FAQ</a></li>
+						<li> <a class="page-scroll" href="people.html">People</a> </li>
 						<li role="separator" class="divider"></li>
-						<li><a href="http://setiathome.berkeley.edu/contact.php">Contact Us</a></li>
+						<li><a href="https://seti.berkeley.edu/contact">Contact Us</a></li>
+						<li>
+							<a class="page-scroll" href="http://setiathome.berkeley.edu/sah_donate.php">Donate</a>
+						</li>
 
 
 					</ul>
@@ -174,7 +177,13 @@
 	</header>
 
 	<!-- About Section -->
-	<section id="about" class="container content-section text-center">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2 text-center">
+			<h2>The Search for ExtraTerrestrial Intelligence </h2>
+			<h3>At UC Berkeley</h3>
+		</div>
+	</div>
+	<section id="about" class="container content-section text-justify">
 		<div class="row">
 			<div class="col-lg-8 col-lg-offset-2">
 				<p> Berkeley SETI Research Center conducts experiments searching for electromagnetic signatures of intelligent extraterrestrial civilizations, spanning wavelengths from radio to visible light. We're the creators of the SETI@home volunteer computing software, that utilizes spare resources on volunteer computers to aid in processing data from radio telescopes. And we're excited to be participating in the new Breakthrough Listen initiative to use the Green Bank, Parkes, and Automated Planet Finder telescopes to dramatically expand the search for cosmic company. </p>
@@ -263,7 +272,7 @@
 				<div class="col-md-4 col-sm-8 col-md-offset-4 col-sm-offset-2">
 
 
-					<p>Website: Chris Schodt, Content: Steve Croft, Technical: Matt Lebofsky</p>
+					<p class="credit">Website: Chris Schodt, Content: Steve Croft, Technical: Matt Lebofsky</p>
 
 				</div>
 			</div>
@@ -279,7 +288,7 @@
 	<!-- Plugin JavaScript -->
 	<script src="js/jquery.easing.min.js"></script>
 
-	 
+
 	<!--
     <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRngKslUGJTlibkQ3FkfTxj3Xss1UlZDA&sensor=false"></script>
 -->
